@@ -1,10 +1,9 @@
-CREATE TABLE IF NOT EXISTS `Alexandria`.`usersusersidUsuario` (
-  `idUsuario` INT NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
+CREATE TABLE IF NOT EXISTS `Alexandria`.`users` (
+  `idusers` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(85) NOT NULL,
   `user` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idUsuario`),
-  UNIQUE INDEX `user_UNIQUE` (`user` ASC),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC))
+  PRIMARY KEY (`idusers`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
+  UNIQUE INDEX `user_UNIQUE` (`user` ASC))
 ENGINE = InnoDB
-
